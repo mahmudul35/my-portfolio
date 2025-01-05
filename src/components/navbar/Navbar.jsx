@@ -49,9 +49,10 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                  I use the latest technologies to create seamless, efficient
+                  web applications. I don't just write code for functionality,
+                  but I also ensure that every interaction is smooth and
+                  engaging, making the user experience simple and intuitive.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">

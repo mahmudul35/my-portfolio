@@ -12,7 +12,7 @@ const Education = () => {
       {/* part one */}
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">1998 - 2010</p>
+          {/* <p className="text-sm text-designColor tracking-[4px]">1998 - 2010</p> */}
           <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
@@ -20,25 +20,25 @@ const Education = () => {
             title="BSc in Computer Science and Engineering"
             subTitle="Pabna University of Science and Technology(2020 - 2025)"
             result="3.35/4"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+            des="A bachelor's degree focusing on computer science and engineering, where I solve real-life problems and tackle various technical challenges through innovative solutions."
           />
           <ResumeCard
-            title="Higher Secondary School Certificate(HSC)"
+            title="Higher Secondary Certificate(HSC)"
             subTitle="Birshrestha Munshi Abdur Rouf Public College(2017 - 2019)"
             result="4.42/5"
-            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
+            des="Higher education in the science group, building foundational knowledge in physics, chemistry, and mathematics for further studies or careers in technology."
           />
           <ResumeCard
             title="Secondary School Education(SSC)"
             subTitle="Masua High School (2011 - 2017)"
             result="5.00/5"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
+            des="Secondary education in the science group, focusing on subjects like mathematics, physics, and chemistry to prepare for higher education and careers in science and technology."
           />
         </div>
       </div>
       {/* part Two */}
 
-      <div>
+      {/* <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
           <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
@@ -63,7 +63,7 @@ const Education = () => {
             des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
           />
         </div>
-      </div>
+      </div> */}
     </motion.div>
   );
 };

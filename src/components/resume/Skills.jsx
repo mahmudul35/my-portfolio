@@ -1,5 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import React from "react";
 
 const Skills = () => {
   return (
@@ -145,7 +145,7 @@ const Skills = () => {
             </span>
           </div>
           <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">SOFTWARE</p>
+            <p className="text-sm uppercase font-medium">NODEJS</p>
             <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
               <motion.span
                 initial={{ x: "-100%", opacity: 0 }}
@@ -161,6 +161,6 @@ const Skills = () => {
       </div>
     </motion.div>
   );
-}
+};
 
-export default Skills
+export default Skills;

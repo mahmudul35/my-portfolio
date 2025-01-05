@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Title from "../layouts/Title";
-import Achievement from "./Achievement";
 import Education from "./Education";
-import Experience from "./Experience";
 import Skills from "./Skills";
 
 const Resume = () => {
@@ -13,7 +11,7 @@ const Resume = () => {
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
-        <Title title="7+ YEARS OF EXPERIENCE" des="My Resume" />
+        <Title title="" des="My Resume" />
       </div>
       <div>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
@@ -45,7 +43,7 @@ const Resume = () => {
           >
             Professional Skills
           </li>
-          <li
+          {/* <li
             onClick={() =>
               setEducationData(false) &
               setSkillData(false) &
@@ -74,13 +72,13 @@ const Resume = () => {
             } resumeLi`}
           >
             Achievements
-          </li>
+          </li> */}
         </ul>
       </div>
       {educationData && <Education />}
       {skillData && <Skills />}
-      {achievementData && <Achievement />}
-      {experienceData && <Experience />}
+      {/* {achievementData && <Achievement />} */}
+      {/* {experienceData && <Experience />} */}
     </section>
   );
 };

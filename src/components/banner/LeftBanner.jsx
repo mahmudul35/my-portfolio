@@ -28,9 +28,10 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I use animation as a third dimension by which to simplify experiences
-          and kuiding thro each and every interaction. I'm not adding motion
-          just to spruce things up, but doing it in ways that.
+          I use the latest technologies to create seamless, efficient web
+          applications. I don't just write code for functionality, but I also
+          ensure that every interaction is smooth and engaging, making the user
+          experience simple and intuitive.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -75,6 +76,7 @@ const LeftBanner = () => {
             <span className="bannerIcon">
               <SiNextdotjs />
             </span>
+
             <span className="bannerIcon">
               <SiTailwindcss />
             </span>

@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillAppstore } from "react-icons/ai";
-import { FaGlobe, FaMobile } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 import { SiAntdesign, SiProgress } from "react-icons/si";
 import Title from "../layouts/Title";
 import Card from "./Card";
@@ -14,38 +14,33 @@ const Features = () => {
       <Title title="Features" des="What I Do" />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
         <Card
-          title="Business Stratagy"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          title="Web Development"
+          des="I build responsive, high-performance websites using the MERN stack and modern development tools."
         />
         <Card
           title="App Development"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des="I build cross-platform mobile apps with React Native, providing a seamless experience on iOS and Android."
           icon={<AiFillAppstore />}
         />
         <Card
           title="SEO Optimisation"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des="I optimize websites for search engines to improve rankings and drive organic traffic."
           icon={<SiProgress />}
         />
-        <Card
+        {/* <Card
           title="Mobile Development"
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
           hic consequuntur eum repellendus ad."
           icon={<FaMobile />}
-        />
+        /> */}
         <Card
           title="UX Design"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des="I craft intuitive, user-centric designs to ensure smooth and engaging user experiences."
           icon={<SiAntdesign />}
         />
         <Card
           title="Hosting Websites"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          des="I offer reliable website hosting services to ensure fast, secure, and scalable performance."
           icon={<FaGlobe />}
         />
       </div>

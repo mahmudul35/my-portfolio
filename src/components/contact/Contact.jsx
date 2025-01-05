@@ -1,7 +1,7 @@
+import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import Title from "../layouts/Title";
 import ContactLeft from "./ContactLeft";
-
 const Contact = () => {
   const [username, setUsername] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -17,34 +17,83 @@ const Contact = () => {
       .toLocaleLowerCase()
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
-  // ========== Email Validation end here ================
+  // ========== Email Validation end here ================ seid:service_yzsqyje
 
+  // const handleSend = (e) => {
+  //   e.preventDefault();
+  //   if (username === "") {
+  //     setErrMsg("Username is required!");
+  //   } else if (phoneNumber === "") {
+  //     setErrMsg("Phone number is required!");
+  //   } else if (email === "") {
+  //     setErrMsg("Please give your Email!");
+  //   } else if (!emailValidation(email)) {
+  //     setErrMsg("Give a valid Email!");
+  //   } else if (subject === "") {
+  //     setErrMsg("Plese give your Subject!");
+  //   } else if (message === "") {
+  //     setErrMsg("Message is required!");
+  //   } else {
+  //     setSuccessMsg(
+  //       `Thank you dear ${username}, Your Messages has been sent Successfully!`
+  //     );
+  //     setErrMsg("");
+  //     setUsername("");
+  //     setPhoneNumber("");
+  //     setEmail("");
+  //     setSubject("");
+  //     setMessage("");
+  //   }
+  // };
   const handleSend = (e) => {
     e.preventDefault();
-    if (username === "") {
-      setErrMsg("Username is required!");
-    } else if (phoneNumber === "") {
-      setErrMsg("Phone number is required!");
-    } else if (email === "") {
-      setErrMsg("Please give your Email!");
-    } else if (!emailValidation(email)) {
-      setErrMsg("Give a valid Email!");
-    } else if (subject === "") {
-      setErrMsg("Plese give your Subject!");
-    } else if (message === "") {
-      setErrMsg("Message is required!");
-    } else {
-      setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
-      );
-      setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+
+    if (
+      username === "" ||
+      phoneNumber === "" ||
+      email === "" ||
+      subject === "" ||
+      message === ""
+    ) {
+      setErrMsg("All fields are required.");
+      return;
     }
+
+    // Clear the error message
+    setErrMsg("");
+
+    const templateParams = {
+      from_name: username,
+      from_phone: phoneNumber,
+      from_email: email,
+      subject: subject,
+      message: message,
+    };
+
+    emailjs
+      .send(
+        "service_yzsqyje", // EmailJS service ID (provided by EmailJS)
+        "template_9z7a6as", // EmailJS template ID (provided by EmailJS)
+        templateParams,
+        "LXyDscLETjkf75FFN" // EmailJS user ID (provided by EmailJS)
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully: ", result.text);
+          setSuccessMsg(`Thank you, ${username}! Your message has been sent.`);
+          setUsername("");
+          setPhoneNumber("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
+        },
+        (error) => {
+          console.log("Error sending email: ", error.text);
+          setErrMsg("Something went wrong, please try again.");
+        }
+      );
   };
+
   return (
     <section
       id="contact"
