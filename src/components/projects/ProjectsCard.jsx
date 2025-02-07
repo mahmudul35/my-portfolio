@@ -2,7 +2,16 @@ import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { FaGlobe } from "react-icons/fa";
 
-const ProjectsCard = ({ title, des, src, gitLink, liveLink, tech }) => {
+const ProjectsCard = ({
+  title,
+  des,
+  src,
+  gitLink,
+  liveLink,
+  tech,
+  futurePlan,
+  challenge,
+}) => {
   const [modal, setModal] = React.useState(false);
   return (
     <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000">
@@ -91,19 +100,13 @@ const ProjectsCard = ({ title, des, src, gitLink, liveLink, tech }) => {
                     {" "}
                     Challenge Faced{" "}
                   </h3>
-                  <p className="text-sm text-gray-300">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, voluptatum.
-                  </p>
+                  <p className="text-sm text-gray-300">{challenge}</p>
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-1">
                     Future Plan
                   </h3>
-                  <p className="text-sm text-gray-300">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, voluptatum.
-                  </p>
+                  <p className="text-sm text-gray-300">{futurePlan}</p>
                 </div>
                 <div className="flex gap-2">
                   <a href={gitLink} target="blank">

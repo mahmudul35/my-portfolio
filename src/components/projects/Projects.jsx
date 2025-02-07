@@ -32,6 +32,8 @@ const Projects = () => {
             "MongoDB",
             "Firebase",
           ]}
+          futurePlan="Future improvements include adding a review system, implementing a notification system, and adding a mobile app."
+          challenge="Working with multiple APIs and creating smooth data visualizations was challenging. I implemented proper error handling and loading states to improve user experience."
         />
         <ProjectsCard
           title="DISCOUNT PRO"
@@ -42,6 +44,8 @@ const Projects = () => {
           }
           liveLink={"https://couponpro-f66b9.web.app/"}
           tech={["React", "Tailwind CSS", "Express.js", "MongoDB", "Firebase"]}
+          futurePlan="I plan to add more features to the platform, such as user authentication, coupon sharing, and a user-friendly dashboard."
+          challenge="The main challenge I faced was integrating the coupon data with the front-end. I overcame this challenge by using a RESTful API to fetch and display the data."
         />
         {/* <ProjectsCard
           title="Chatting App"
@@ -56,6 +60,8 @@ const Projects = () => {
           liveLink={"https://volunteer-management-5a1f8.web.app/"}
           gitLink="#"
           tech={["React", "Tailwind CSS", "Express.js", "MongoDB", "Firebase"]}
+          futurePlan="I plan to add more features to the platform, such as user authentication, volunteer matching, and a user-friendly dashboard."
+          challenge="The main challenge I faced was integrating the volunteer data with the front-end. I overcame this challenge by using a RESTful API to fetch and display the data."
         />
         {/* <ProjectsCard
           title="E-commerce Website"
