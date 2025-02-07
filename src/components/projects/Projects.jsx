@@ -24,6 +24,14 @@ const Projects = () => {
             "https://github.com/mahmudul35/chill-gamer-client?tab=readme-ov-file"
           }
           liveLink={"https://chillgamer-eaa4c.web.app/"}
+          tech={[
+            "React",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Firebase",
+          ]}
         />
         <ProjectsCard
           title="DISCOUNT PRO"
@@ -33,6 +41,7 @@ const Projects = () => {
             "https://github.com/mahmudul35/Discount-PRO-A-Coupon-Collecting-Application?tab=readme-ov-file"
           }
           liveLink={"https://couponpro-f66b9.web.app/"}
+          tech={["React", "Tailwind CSS", "Express.js", "MongoDB", "Firebase"]}
         />
         {/* <ProjectsCard
           title="Chatting App"
@@ -46,6 +55,7 @@ const Projects = () => {
           src={volun}
           liveLink={"https://volunteer-management-5a1f8.web.app/"}
           gitLink="#"
+          tech={["React", "Tailwind CSS", "Express.js", "MongoDB", "Firebase"]}
         />
         {/* <ProjectsCard
           title="E-commerce Website"
